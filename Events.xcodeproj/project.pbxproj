@@ -13,6 +13,10 @@
 		34CE85D72702AF7500521EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CE85D52702AF7500521EC6 /* Main.storyboard */; };
 		34CE85D92702AF7700521EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CE85D82702AF7700521EC6 /* Assets.xcassets */; };
 		34CE85DC2702AF7700521EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CE85DA2702AF7700521EC6 /* LaunchScreen.storyboard */; };
+		34CE85E42702AF8700521EC6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE85E32702AF8700521EC6 /* AppCoordinator.swift */; };
+		34CE85E62702B04100521EC6 /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE85E52702B04100521EC6 /* EventListCoordinator.swift */; };
+		34CE85EA2702B0F000521EC6 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE85E92702B0F000521EC6 /* EventListViewController.swift */; };
+		34CE85EC2702B2C600521EC6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE85EB2702B2C600521EC6 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		34CE85D82702AF7700521EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34CE85DB2702AF7700521EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34CE85DD2702AF7700521EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34CE85E32702AF8700521EC6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		34CE85E52702B04100521EC6 /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
+		34CE85E92702B0F000521EC6 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		34CE85EB2702B2C600521EC6 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				34CE85D82702AF7700521EC6 /* Assets.xcassets */,
 				34CE85DA2702AF7700521EC6 /* LaunchScreen.storyboard */,
 				34CE85DD2702AF7700521EC6 /* Info.plist */,
+				34CE85E32702AF8700521EC6 /* AppCoordinator.swift */,
+				34CE85E52702B04100521EC6 /* EventListCoordinator.swift */,
+				34CE85E92702B0F000521EC6 /* EventListViewController.swift */,
+				34CE85EB2702B2C600521EC6 /* UIColor+Extension.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34CE85EC2702B2C600521EC6 /* UIColor+Extension.swift in Sources */,
+				34CE85E42702AF8700521EC6 /* AppCoordinator.swift in Sources */,
+				34CE85EA2702B0F000521EC6 /* EventListViewController.swift in Sources */,
 				34CE85D42702AF7500521EC6 /* ViewController.swift in Sources */,
 				34CE85D02702AF7500521EC6 /* AppDelegate.swift in Sources */,
 				34CE85D22702AF7500521EC6 /* SceneDelegate.swift in Sources */,
+				34CE85E62702B04100521EC6 /* EventListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
