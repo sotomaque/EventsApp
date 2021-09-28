@@ -17,6 +17,8 @@
 		34CE85E62702B04100521EC6 /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE85E52702B04100521EC6 /* EventListCoordinator.swift */; };
 		34CE85EA2702B0F000521EC6 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE85E92702B0F000521EC6 /* EventListViewController.swift */; };
 		34CE85EC2702B2C600521EC6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE85EB2702B2C600521EC6 /* UIColor+Extension.swift */; };
+		34CE85F22702B9FD00521EC6 /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 34CE85F02702B9FC00521EC6 /* Events.xcdatamodeld */; };
+		34CE85F42702BA9300521EC6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE85F32702BA9300521EC6 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		34CE85E52702B04100521EC6 /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
 		34CE85E92702B0F000521EC6 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		34CE85EB2702B2C600521EC6 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		34CE85F12702B9FD00521EC6 /* Events.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
+		34CE85F32702BA9300521EC6 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,9 @@
 		34CE85CE2702AF7500521EC6 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				34CE85ED2702B99D00521EC6 /* Extensions */,
+				34CE85EE2702B9A700521EC6 /* Controllers */,
+				34CE85EF2702B9B600521EC6 /* Coordinators */,
 				34CE85CF2702AF7500521EC6 /* AppDelegate.swift */,
 				34CE85D12702AF7500521EC6 /* SceneDelegate.swift */,
 				34CE85D32702AF7500521EC6 /* ViewController.swift */,
@@ -71,12 +78,35 @@
 				34CE85D82702AF7700521EC6 /* Assets.xcassets */,
 				34CE85DA2702AF7700521EC6 /* LaunchScreen.storyboard */,
 				34CE85DD2702AF7700521EC6 /* Info.plist */,
-				34CE85E32702AF8700521EC6 /* AppCoordinator.swift */,
-				34CE85E52702B04100521EC6 /* EventListCoordinator.swift */,
-				34CE85E92702B0F000521EC6 /* EventListViewController.swift */,
-				34CE85EB2702B2C600521EC6 /* UIColor+Extension.swift */,
+				34CE85F02702B9FC00521EC6 /* Events.xcdatamodeld */,
+				34CE85F32702BA9300521EC6 /* CoreDataManager.swift */,
 			);
 			path = Events;
+			sourceTree = "<group>";
+		};
+		34CE85ED2702B99D00521EC6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				34CE85EB2702B2C600521EC6 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		34CE85EE2702B9A700521EC6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34CE85E92702B0F000521EC6 /* EventListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		34CE85EF2702B9B600521EC6 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				34CE85E32702AF8700521EC6 /* AppCoordinator.swift */,
+				34CE85E52702B04100521EC6 /* EventListCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,11 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34CE85F22702B9FD00521EC6 /* Events.xcdatamodeld in Sources */,
 				34CE85EC2702B2C600521EC6 /* UIColor+Extension.swift in Sources */,
 				34CE85E42702AF8700521EC6 /* AppCoordinator.swift in Sources */,
 				34CE85EA2702B0F000521EC6 /* EventListViewController.swift in Sources */,
 				34CE85D42702AF7500521EC6 /* ViewController.swift in Sources */,
 				34CE85D02702AF7500521EC6 /* AppDelegate.swift in Sources */,
+				34CE85F42702BA9300521EC6 /* CoreDataManager.swift in Sources */,
 				34CE85D22702AF7500521EC6 /* SceneDelegate.swift in Sources */,
 				34CE85E62702B04100521EC6 /* EventListCoordinator.swift in Sources */,
 			);
@@ -376,6 +408,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		34CE85F02702B9FC00521EC6 /* Events.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				34CE85F12702B9FD00521EC6 /* Events.xcdatamodel */,
+			);
+			currentVersion = 34CE85F12702B9FD00521EC6 /* Events.xcdatamodel */;
+			path = Events.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 34CE85C42702AF7400521EC6 /* Project object */;
 }

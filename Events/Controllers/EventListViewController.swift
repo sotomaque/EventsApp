@@ -8,9 +8,20 @@
 import UIKit
 
 class EventListViewController: UIViewController {
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupViews()
+    }
+    
+    static func instantiate() -> EventListViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let controller = storyboard.instantiateViewController(withIdentifier: "EventListViewController") as! EventListViewController
+        return controller 
+    }
+    
+    /// Sets Navigation Bar Button and Title
+    private func setupViews() {
         let plusImage = UIImage(systemName: "plus.circle.fill")
         let barButtonItem = UIBarButtonItem(
             image: plusImage,
@@ -22,12 +33,6 @@ class EventListViewController: UIViewController {
         navigationItem.rightBarButtonItem = barButtonItem
         navigationItem.title = "Events"
         navigationController?.navigationBar.prefersLargeTitles = true
-    }
-    
-    static func instantiate() -> EventListViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        let controller = storyboard.instantiateViewController(withIdentifier: "EventListViewController") as! EventListViewController
-        return controller 
     }
     
     @objc private func tappedRightBarButton() {
